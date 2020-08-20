@@ -11,6 +11,7 @@ $(document).ready(function () {
 
   $("[data-scroll]").on("click", function (event) {
     event.preventDefault();
+    $(".nav").removeClass("active");
 
     var $this = $(this),
       blockId = $this.data("scroll"),
