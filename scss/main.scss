@@ -707,6 +707,12 @@ img {
   }
 }
 
+@media (max-width: $mobile-sm) {
+  .nav__burger {
+    top: 22px;
+  }
+}
+
 // Fonts
 @font-face {
   font-family: "Futura Futuris Light";
