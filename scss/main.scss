@@ -661,6 +661,16 @@ img {
   .colors__item {
     width: 45%;
     margin: 0 5px;
+    margin-bottom: 10px;
+
+    &:nth-child(7),
+    &:nth-child(8) {
+      margin-bottom: 0;
+    }
+  }
+
+  .colors__item__title {
+    font-size: 12px;
   }
 
   .colors__img {
