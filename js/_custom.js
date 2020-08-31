@@ -49,6 +49,9 @@ $(document).ready(function () {
       $(".gallery__mask").removeClass("active");
     }
   });
+
+  // Cuurrent year in a footer
+  $(".footer__year").text(new Date().getFullYear());
 });
 
 $(document).mouseup(function (e) {

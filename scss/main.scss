@@ -468,8 +468,9 @@ img {
 .footer {
   padding: 25px;
   text-align: center;
-  background: #fffdd0;
+  background: #009eb252;
   font-weight: 500;
+  color: #fff;
 }
 
 // Gallery
@@ -726,6 +727,7 @@ img {
   .connection {
     height: 600px;
     padding-top: 0px;
+    border-radius: none;
   }
 
   .connection__modal {
@@ -733,12 +735,13 @@ img {
     max-height: 400px;
     position: static;
     box-shadow: none;
-    border-radius: none;
+    border-radius: 0;
     width: 100%;
-    background: #fffdd0;
+    background: #009eb252;
     margin-top: 0;
     padding: 15px;
     font-size: 18px;
+    color: #fff;
   }
 
   .map {
