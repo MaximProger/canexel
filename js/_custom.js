@@ -33,4 +33,28 @@ $(document).ready(function () {
   $(".nav__burger").on("click", function () {
     $(".nav").removeClass("active");
   });
+
+  // Gallery
+  $(".houses__img").on("click", function () {
+    $(".gallery__mask").addClass("active");
+    $(".gallery__mask__img").attr("src", $(this).attr("src"));
+  });
+
+  $(".gallery__mask__close").on("click", function () {
+    $(".gallery__mask").removeClass("active");
+  });
+
+  $(document).keyup(function (e) {
+    if (e.key === "Escape") {
+      $(".gallery__mask").removeClass("active");
+    }
+  });
+});
+
+$(document).mouseup(function (e) {
+  let modalctr = $(".gallery__mask");
+  let modal = $(".gallery__mask__image__wrapper");
+  if (!modal.is(e.target) && modal.has(e.target).length === 0) {
+    modalctr.removeClass("active");
+  }
 });
