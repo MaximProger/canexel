@@ -752,6 +752,11 @@ img {
   .gallery__mask__img {
     max-width: 310px;
   }
+
+  .gallery__mask__close {
+    right: 0;
+    top: -60px;
+  }
 }
 
 @media (max-width: $mobile-sm) {
